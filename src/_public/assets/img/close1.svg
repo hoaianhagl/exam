@@ -1,0 +1,13 @@
+<svg id="Nav" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="46" viewBox="0 0 47 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="close1" class="cls-1" d="M1,42.189L43.19,0,46,2.81,3.81,45Z"/>
+  <path id="close2" class="cls-1" d="M3.81,0L46,42.189,43.19,45,1,2.81Z"/>
+  <image x="1" width="45" height="45" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAABcElEQVRYheXZTQ6CMBAFYDbe0GNxDjHRE8piTANNkL4p/ZmWR2zCgrEz88UFlHYQEXfdROQhIvf1nu1yrml1Dh78lmV8COHOM6++l/O64FN+BxN8C/Zj0n5ggCOXu7/HJpwJR57Ze44mngFHjnnrSEnoCUf9533/1MQecNQ3AGtorUBLOOoHwTG0VqgFHPVRwUdoraAlHNWPglPQWmELOKp7CE5Faw1q4KheEjgHrTUqgaM6yeBctNYwB47ys8AlaK1xChzlZYNL0RogBkfzi8A1aA2C4GheMbgWrYG28CaPyyBgCB+VePWLKQgYwvfD7E0aBBrBTdcsQaDyGgPuMkbLPkHgn/7pGNgcHgSMwNRPDw1M+5y+3BsRQRA4Nr/r2gMBYuBYXpdVHmpMvZ5GDam/XFAj6m9E1ID6axwVpt73QAWpd5hQIeq9PFSAetcUJVLvT6ME6pMANJH6zAVNoD/duuQ54iVPbD38GmfjIsMXw3BtvGoYKDkAAAAASUVORK5CYII="/>
+</svg>

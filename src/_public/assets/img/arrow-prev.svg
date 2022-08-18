@@ -1,0 +1,20 @@
+<svg id="pickup" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.8;
+      }
+
+      .cls-2 {
+        fill: #ffba00;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="slidernav">
+    <g id="prev">
+      <rect id="arrow-bg" class="cls-1" width="70" height="70"/>
+      <path id="arrow" class="cls-2" d="M41.667,55L28.334,39h0L25,35,41.666,15,45,19,31.667,35,45,51Z"/>
+    </g>
+  </g>
+</svg>

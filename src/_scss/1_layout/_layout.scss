@@ -1,0 +1,70 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.4rem;
+    width: 100%;
+    line-height: 1.5;
+    margin: 0 auto;
+    @include sp {
+        min-width: 320px;
+    }
+}
+//-------------------------------------------------------
+main {
+    // padding: 0px 0 100px;
+}
+
+section {
+    // padding: 50px 0 90px;
+}
+
+//-------------------------------------------------------
+.l-container {
+    margin: 0 auto;
+}
+//-------------------------------------------------------
+.c-mainvisual {
+    position: relative;
+    width: 100%;
+
+    &__slide {
+        width: 100%;
+
+        .slick-track {
+            height: 700px;
+        }
+
+        img {
+            width: 100%;
+            min-height: 700px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    &__inner {
+        position: absolute;
+        bottom: 7.3%;
+        left: 19.5%;
+        text-align: center;
+
+        img {
+            max-width: 558px;
+            width: 100%;
+            margin-bottom: 6.2%;
+        }
+
+        .c-text2 {
+            width: 562px;
+            color: $color1;
+            background-color: rgba($color: #fff, $alpha: 0.2);
+            font-size: 2rem;
+            line-height: 1.7;
+            font-weight: 600;
+            letter-spacing: -0.1px;
+        }
+    }
+
+    
+}

@@ -1,0 +1,39 @@
+/*------------------------------------------------------------
+label
+------------------------------------------------------------*/
+.c-label1 {
+    font-feature-settings: "palt" 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color2;
+    background-color: $color1;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 2;
+}
+
+@include sp {
+    .c-label1 {
+        font-size: 1.2rem;
+        line-height: 1.9;
+    }
+}
+
+.c-label2 {
+    background-color: rgb(204, 204, 204);
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.9;
+    padding: 0 8px;
+    margin-left: -3px;
+
+    @include sp {
+        font-size: 1.1rem;
+        margin-left: 0;
+        padding: 0 11px;
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" viewBox="0 0 30 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a99d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="pagetop" class="cls-1" d="M975,3717l-10-10h0l-5-5h0l-5,5h0l-10,10,5,5,10-10,10,10Z" transform="translate(-945 -3702)"/>
+</svg>

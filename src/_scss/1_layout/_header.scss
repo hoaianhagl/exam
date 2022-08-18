@@ -1,0 +1,119 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    position: absolute;
+    z-index: 1000;
+    max-width: 1160px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__contactlink {
+        margin-top: 17px;
+        margin-bottom: 15px;
+        padding-right: 2px;
+        text-align: right;
+
+        p {
+            display: inline-block;
+            color: #fefefe;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+        
+        span {
+            display: inline-block;
+            margin-right: -3px;
+            margin-left: -3px;
+        }
+
+        img {
+            margin-left: 6px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        background-color: $color1;
+        align-items: center;
+        height: 91px;
+    }
+
+    &__logo {
+        padding-left: 1.7%;
+        width: 27%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__navlink {
+        width: 63%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        background-color: $color2;
+        color: $color1;
+        font-weight: 600;
+        max-width: 172px;
+        width: 24%;
+        padding-left: 3px;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* Main menu
+------------------------------------------------------------*/
+.c-gnav {
+    width: 75%;
+
+    ul {
+        max-width: 546px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 91px;
+    }
+
+    li {
+        height: 91px;
+    }
+
+    a {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-feature-settings: "palt" 1;
+        display: inline-flex;
+        align-items: center;
+        height: 97.1%;
+        padding: 0 34px 0 15px;
+    }
+
+    // li:nth-of-type(4) {
+    //     a {
+    //         padding: 0 25px 0 27px;
+    //     }
+    // }
+
+    // li:nth-of-type(5) {
+    //     a {
+    //         padding: 0 23px 0 25px;
+    //     }
+    // }
+    
+    li:hover {
+        background-color: $color2;
+        color: $color1;
+    }
+    
+}

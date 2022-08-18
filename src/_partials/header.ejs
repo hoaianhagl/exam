@@ -1,0 +1,75 @@
+<header class="c-header">
+  <div class="c-header__contactlink">
+    <a href="/contact.html">
+      <p>掲載<span>・</span>取材依頼の企業様へ</p>
+      <img src="../_public/assets/img/arrow.svg" alt="icon">
+    </a>
+  </div>
+  
+  <div class="c-header__container">
+    <div class="c-header__logo">
+      <a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a>
+    </div>
+    <div class="c-header__navlink">
+      <nav class="c-gnav">
+        <div class="c-gnav__btnclose u-onlysp c-closemenu">
+          <img src="../_public/assets/img/close1.svg" alt="icon">
+          <p>閉じる</p>
+        </div>
+        <ul>
+          <li class="u-onlysp">
+            <a href="#">ホーム</a>
+          </li>
+          <% if (typeof linklists != 'undefined') { %>
+            <% linklists.main && linklists.main.forEach(link => { %>
+              <li>
+                <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+                <% if (link.links) { %>
+                  <ul>
+                    <% link.links.forEach(child_link => { %>
+                      <li>
+                        <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } %>
+              </li>
+            <% }) %>
+          <% } %>
+          <li class="u-onlysp">
+            <a href="#">運営会社</a>
+          </li>
+          <li class="u-onlysp">
+            <a href="#">お問い合わせ</a>
+          </li>
+        </ul>
+        <div class="c-gnav__footer u-onlysp">
+          <div class="c-gnav__footerinfo">
+            <h2 class="c-text1"><span>TEL.</span>089-947-1411</h2>
+            <h3 class="c-text2 c-text2__style1">受付時間9:00〜17:00 （平日のみ）</h3>
+          </div>
+          <div class="c-gnav__footerextrainfo">
+            <p class="c-text2 c-text2__style2">掲載・取材のご依頼についてはこちら</p>
+            <p>プライバシーポリシー</p>
+            <p>利用規約</p>
+          </div>
+        </div>
+        <div class="c-gnav__btnclose2 u-onlysp c-closemenu">
+          <p class="c-icon2">閉じる</p>
+        </div>
+      </nav>
+      <div class="c-header__btn">
+        <a href="#">
+          <div class="c-icon u-onlysp">
+          </div>
+          お問い合わせ
+        </a>
+      </div>
+      <div class="c-header__openmenu u-onlysp">
+        <img src="../_public/assets/img/bar.svg" alt="icon">
+        <p>メニュー</p>  
+      </div>
+    </div>
+    
+  </div>
+</header>

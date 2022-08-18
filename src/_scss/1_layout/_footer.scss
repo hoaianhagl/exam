@@ -1,0 +1,97 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    margin: 0 auto;
+    font-feature-settings: "palt" 1;
+    
+    &__arrow {
+        padding: 1.5% 0 1.6%;
+        text-align: center;
+    }
+    &__wrap {
+        background-color: #00ada0;
+    }
+    
+    &__main {
+        max-width: 1160px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &__intro {
+        width: 36.3%;
+        padding: 1.7% 0 1.9%;
+        color: $color1;
+        font-size: 1.4rem;
+        border-right: 1px solid #80d6d0;
+        font-feature-settings: "palt" 1;
+        line-height: 1.8;
+
+        img {
+            max-width: 296px;
+            width: 71%;
+        }
+    }
+
+    &__mainintro {
+        margin-left: -2px;
+        padding-top: 3.4%;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+
+    &__subintro {
+        font-weight: 400;
+        margin-left: -2px;
+
+        span {
+            margin-right: 12.5px;
+        }
+    }
+
+    &__contact {
+        width: 64%;
+        display: flex;
+        color: $color1;
+    }
+
+    &__contactinfo {
+        width: 59%;
+        padding: 2.2% 2.8%;
+        
+        p {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        .c-text1 {
+            font-size: 4.1rem;
+            font-weight: 400;
+
+            span {
+                font-size: 2.6rem;
+                margin-right: 6px;
+            }
+        }
+
+        .c-text2 {
+            font-size: 1.4rem;
+            max-width: 79%;
+            margin: 7px 0 0;
+            text-align: center;
+        }
+    }
+
+    &__btngroup {
+        width: 41%;
+    }
+
+    .c-copyright {
+        background-color: #33bdb3;
+        padding: 17px 0;
+        text-align: center;
+        font-size: 1.3rem;
+        color: $color1;
+    }
+}

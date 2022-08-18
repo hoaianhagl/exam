@@ -1,0 +1,65 @@
+@include screen1200 {
+    .c-pickup {
+        &__slide {
+            .slick-list {
+                padding: 0 25px !important;
+            }
+        }
+    }
+}
+
+@include sp {
+    .c-pickup {
+        padding: 10.8% 0 23.3%;
+
+        &__title {
+            margin-bottom: 11.2%;
+        }
+
+        &__des {
+            color: #000;
+            padding: 2px 5px 0;
+            font-feature-settings: "palt" 1;
+    
+            .c-maintext {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+    
+            .c-subtext {
+                font-size: 1.1rem;
+            }
+        }
+
+        &__slide {
+            .slick-list {
+                padding: 0 20px !important;
+            }
+        }
+
+        &__item {
+            width: 165px !important;
+            height: 216px;
+            margin: 0 7.5px;
+            cursor: pointer;
+        }
+
+        .slick-dots {
+            gap: 0 1px;
+            bottom: -20.9%;
+            transform: translate(-50%, -12px);
+
+            button {
+                width: 7px;
+                height: 7px;
+            }
+
+            li {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+

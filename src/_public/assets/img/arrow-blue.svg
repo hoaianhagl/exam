@@ -1,0 +1,13 @@
+<svg id="footer" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a99d;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="btn">
+    <path id="icon" class="cls-1" d="M10,20A10,10,0,1,1,20,10,10,10,0,0,1,10,20ZM13.973,9.145L9.361,4.5A1.281,1.281,0,0,0,7.544,6.306l3.715,3.741L7.544,13.788a1.281,1.281,0,1,0,1.818,1.805l4.611-4.643A1.281,1.281,0,0,0,13.973,9.145Z"/>
+  </g>
+</svg>

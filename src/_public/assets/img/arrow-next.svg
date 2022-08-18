@@ -1,0 +1,23 @@
+<svg id="pickup" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.8;
+      }
+
+      .cls-2 {
+        fill: #ffba00;
+      }
+    </style>
+  </defs>
+  <g id="slidernav">
+    <g id="next">
+      <path id="arrow-bg" class="cls-1" d="M70,0H0V70H70V0Z"/>
+      <path id="arrow" class="cls-2" d="M28.333,55L41.666,39h0L45,35,28.334,15,25,19,38.333,35,25,51Z"/>
+    </g>
+  </g>
+</svg>
