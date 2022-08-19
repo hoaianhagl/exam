@@ -2,5 +2,222 @@
 Css of home page
 ------------------------------------------------------------*/
 .p-about {
-    line-height: 2;
+    font-feature-settings: "palt" 1;
+}
+
+.c-aboutvisual {
+    position: relative;
+
+    &__bgimg {
+        height: 400px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .c-title {
+        bottom: 11.3%;
+    }
+}
+
+.c-aboutintro {
+    background: url("../../_public/assets/img/ci-bg.jpg") repeat center;
+
+    .c-breadcrumb {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        display: block;
+        padding-bottom: 33px;
+    }
+
+    &__wrap {
+        max-width: 1160px;
+        width: 97%;
+        margin: 0 auto;
+        padding: 1.4% 0 5.1%;
+    }
+
+    &__title {
+        color: #020000;
+        text-align: center;
+        padding-top: 5.2%;
+        padding-right: 4px;
+        margin-bottom: 4%;
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2;
+        }
+
+        .c-texthighlight {
+            font-size: 3.2rem;
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 15px;
+                background-color: #fff568;
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 60%;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.c-aboutconcept {
+    padding: 2% 0;
+
+    &__item {
+        display: flex;
+
+        > div {
+            width: 50%;
+        }
+    }
+
+    &__item1 {
+        margin-bottom: 4.6%;
+    }
+
+    &__item2 {
+        flex-direction: row-reverse;
+    }
+
+    &__wraptext {
+        width: 90%;
+        max-width: 390px;
+    }
+
+    &__wraptext:nth-child(2) {
+        width: 386px;
+    }
+
+    &__text1 {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.1%;
+    }
+
+    &__text2 {
+        padding-top: 3px;
+        padding-left: 1.5%;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 2.2;
+        margin-bottom: 5px;
+    }
+
+    &__maintext {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2;
+        letter-spacing: 0.2px;
+    }
+
+    &__img {
+        padding-top: 0.7%;
+
+        img {
+            width: 100%;
+            min-height: 484px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.c-abouttable {
+    padding-top: 5.6%;
+
+    &__quote {
+        margin: 0 auto 2.7%;
+        text-align: center;
+
+        p {
+            font-size: 2.6rem;
+            font-weight: 600;
+            line-height: 1.8;
+        }   
+    }
+
+    &__icon1 {
+        margin-right: 7px;
+    }
+
+    &__table {
+        margin: 0 auto 5.3%;
+        max-width: 780px;
+        width: 90%;
+        font-feature-settings: "palt" 1;
+        letter-spacing: 0.1px;
+
+        table {
+            width: 100%;
+            text-align: left;
+        }
+
+        table,
+        th,
+        td {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            border-collapse: collapse;            
+        }
+
+        th,
+        td {
+            padding: 2.8% 0 3.1%;
+            vertical-align: text-top;
+            line-height: 1.875;
+        }
+
+        tr {
+            width: 100%;
+            min-height: 77px;
+        }
+
+        th {
+            margin-right: 1px;
+            width: 20.3%;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        td {
+            font-size: 1.6rem;
+            font-weight: 400;
+
+            span {
+                margin-right: 2%;
+            }
+
+            a {
+                margin-right: 2.6%;
+            }
+        }
+
+        .u-link {
+            color: $color2;
+        }
+    }
 }

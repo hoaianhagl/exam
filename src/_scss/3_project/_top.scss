@@ -237,9 +237,8 @@ Css of home page
 
     &__table {
         margin: 0 auto 2.6%;
-        max-width: 41%;
-        width: 100%;
-        border-collapse: collapse;
+        max-width: 780px;
+        width: 90%;
         font-feature-settings: "palt" 1;
         letter-spacing: 0.1px;
 
@@ -290,8 +289,8 @@ Css of home page
     position: relative;
 
     &__display {
-        max-width: 74.5%;
-        width: 100%;
+        max-width: 1416px;
+        width: 95%;
         margin: 0 auto;
         display: flex;
     }
@@ -311,8 +310,8 @@ Css of home page
     }
 
     &__contentimg {
-        max-width: 33.6%;
-        width: 100%;
+        max-width: 639px;
+        width: 33.8%;
         position: absolute;
         top: -16%;
         left: 50%;

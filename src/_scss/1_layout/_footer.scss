@@ -9,8 +9,10 @@ footer
         padding: 1.5% 0 1.6%;
         text-align: center;
     }
+
     &__wrap {
         background-color: #00ada0;
+        padding: 0 3%;
     }
     
     &__main {
@@ -80,11 +82,28 @@ footer
             max-width: 79%;
             margin: 7px 0 0;
             text-align: center;
+
+            span {
+                margin-left: 13px;
+            }
         }
     }
 
     &__btngroup {
-        width: 41%;
+        width: 40.4%;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 2.9%;
+        margin-left: 0.4%;
+
+        .c-text2 {
+            &__style2 {
+                padding: 11px 0;
+                margin-bottom: 21px;
+            }
+
+        }
     }
 
     .c-copyright {

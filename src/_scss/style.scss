@@ -26,6 +26,7 @@
 @import "1_layout/header";
 @import "1_layout/responsiveheader";
 @import "1_layout/footer";
+@import "1_layout/responsivefooter";
 @import "1_layout/sidebar";
 @import "1_layout/breadcrumb";
 @import "1_layout/layout";
@@ -54,7 +55,9 @@
 @import "3_project/top";
 @import "3_project/responsivepickup";
 @import "3_project/responsiveinfo";
+@import "3_project/responsivenews";
 @import "3_project/about";
+@import "3_project/contact";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-

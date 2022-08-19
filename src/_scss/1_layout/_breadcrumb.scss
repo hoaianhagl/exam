@@ -1,6 +1,27 @@
 /* Breadcrumb
 ------------------------------------------------------------*/
 .c-breadcrumb {
-	
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    &__main {
+        color: $color2;
+        margin-right: 15px;
+        position: relative;
+        
+        &::after {
+            content: "";
+            width: 37px;
+            height: 1px;
+            position: absolute;
+            background-color: #00ada0;
+            bottom: -4px;
+            left: 0;
+        }
+    }
+
+    &__char {
+        margin-right: 13px;
+    }
 }
 

@@ -1,0 +1,47 @@
+@include sp {
+    .c-news {
+        padding-top: 9.3%;
+
+        &__title {
+            margin-bottom: 8%;
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        &__table {
+            max-width: 90%;
+            margin: 0 auto 11.1%;
+
+            tr {
+                height: 64px;
+            }
+
+            th,
+            td {
+                display: block;
+            }
+
+            th {
+                border-bottom: 0 none;
+                width: 100%;
+                font-size: 1.2rem;
+                padding-top: 3.5%;
+                padding-bottom: 2.1%;
+            }
+
+            td {
+                border-top: 0 none;
+                border-bottom: 0 none;
+                width: 100%;
+                font-size: 1.3rem;
+                padding-bottom: 3.5%;
+            }
+        }
+    }
+}

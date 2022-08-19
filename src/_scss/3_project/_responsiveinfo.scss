@@ -1,6 +1,12 @@
 @include screen1200 {
     .c-info {
+        &__display {
+            margin: 0 auto 7.1%;
+        }
 
+        &__item {
+            margin-bottom: 6.3%;
+        }
     }
 }
 
@@ -12,7 +18,7 @@
 
 @include sp {
     .c-info {
-        padding-top: 35px;
+        padding: 10.8% 0 13.2%;
         
         &__title {
             margin-bottom: 7.4%;
