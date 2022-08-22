@@ -6,9 +6,60 @@ btn
 ------------------------------------------------------------*/
 .c-btn1 {
     display: inline-block;
-    padding: 10px 50px;
-    font-size: 1.6rem;
+    max-width: 448px;
+    width: 80%;
+    height: 59px;
+    margin: 0 auto;
+    background-color: $color1;
+    text-align: center;
     border: 2px solid #fff;
-    border-radius: 20px;
-    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $color2;
+        border: 2px solid transparent;
+        width: 100%;
+        padding: 13px 0 16px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-feature-settings: "palt" 1;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("../../_public/assets/img/arrow-blue.svg");
+            top: 15px;
+            right: 15px;
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &:hover {
+        border: 2px solid #00ada0;
+        opacity: 1;
+    }
+}
+
+@include sp {
+    .c-btn1 {
+        max-width: 270px;
+
+        a {
+            padding: 12px 0 13px;
+            font-size: 1.4rem;
+
+            &::after {
+                width: 15px;
+                height: 15px;
+                top: 16px;
+                right: 28px;
+            }
+        }
+    }
 }

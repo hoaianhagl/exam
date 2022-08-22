@@ -23,4 +23,16 @@ title
         font-size: 2.4rem;
         font-weight: 600;
     }
+
+    @include sp {
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
 }
+
+

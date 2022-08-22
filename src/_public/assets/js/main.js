@@ -9,9 +9,7 @@ $(".c-closemenu").click(function(){
     $("body").css("overflow", "auto");
 });
 
-// $(".is-active").find("li").click(function(){
-//     console.log("ok");
-// });
+
 
 //Slide mainvisual
 $(document).ready(function(){

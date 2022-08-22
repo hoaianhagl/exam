@@ -12,7 +12,19 @@
 
 @include tab {
     .c-info {
-        
+        &__display {
+            width: 60%;
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        &__content {
+            min-height: 100%;
+        }
     }
 }
 
@@ -83,4 +95,12 @@
             }
         }
     }
+}
+
+@include screen375 {
+    .c-info {
+        &__content {
+            min-height: auto;
+        }
+    }   
 }

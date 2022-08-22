@@ -116,29 +116,6 @@ text
             opacity: 1;
         }
     }
-
-    &__style2 {
-        max-width: 448px;
-        width: 100%;
-
-        a {
-            background-color: $color1;
-            color: $color2;
-            border: 2px solid transparent;
-            padding: 18px 15px 23px 13px;
-        }
-
-        a::after {
-            background-image: url("../../_public/assets/img/arrow-blue.svg");
-            top: 18px;
-            right: 18px;
-        }
-
-        a:hover {
-            border: 2px solid #00ada0;
-            opacity: 1;
-        }
-    }
 }
 
 @include sp {

@@ -1,6 +1,12 @@
 @include screen1200 {
     .c-header {
         max-width: 97%;
+
+        &__btn {
+            a {
+                padding: 0;
+            }
+        }
     }
 
     .c-gnav {
@@ -63,11 +69,16 @@
 
         &__btn {
             width: 50%;
+            height: unset;
             padding: 0 0 4px;
             font-size: 1rem;
             letter-spacing: 0;
             text-align: center;
             line-height: 1.1;
+
+            a {
+                font-size: 1rem;
+            }
         }
 
         &__openmenu {

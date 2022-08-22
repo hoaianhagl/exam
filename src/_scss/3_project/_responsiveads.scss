@@ -1,0 +1,70 @@
+@include screen1200 {
+    .c-ads {
+        padding: 2% 0;
+
+        &__contentcap {
+            width: 100%;
+        }
+    }
+}
+
+@include tab {
+    .c-ads {
+        &__contentcap {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+@include sp {
+    .c-ads {
+        position: static;
+        margin-top: 24.6%;
+        padding: 0 0 14%;
+
+        &__contentimg {
+            position: relative;
+            top: -33px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+
+            img {
+                width: 78.4%;
+                object-position: 1px;
+            }
+        }
+
+        .c-btn1 {
+            position: relative;
+            transform: unset;
+            left: unset;
+            bottom: unset;
+            width: 85%;
+            height: 38px;
+        }
+
+        &__contentcap {
+            margin: 6.1% auto 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+            width: 100%;
+            line-height: 1.5;
+            padding-right: 3px;
+        }
+
+        &__item {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__display {
+            width: 100%;
+            margin: -10px auto 25px;
+        }
+    }
+}

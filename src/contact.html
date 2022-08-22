@@ -30,11 +30,14 @@
                     <p>個人情報の取扱に関しましては、<span>プライバシーポリシー</span>をご確認ください。</p>
                     <p class="u-red">※は入力必須です。</p>
                 </div>
-                
-                <form action="./">
-                    <div class="c-contactform__item">
-                        <label for="name">氏名<span>※</span></label>
-                        <input class="c-input c-input__style1" type="text" name="name" id="name" required>
+                <span class="c-errormess c-errormess__main"></span>
+                <form action="" method="POST" class="c-form" id="c-form">
+                    <div class="c-contactform__group">
+                        <div class="c-contactform__item">
+                            <label for="name">氏名<span>※</span></label>
+                            <input class="c-input c-input__style1" type="text" name="name" id="name">
+                        </div>
+                        <span class="c-errormess"></span>
                     </div>
                     <div class="c-contactform__item">
                         <label for="company">会社・学校名</label>
@@ -44,59 +47,67 @@
                         <label for="address">住所</label>
                         <input class="c-input c-input__style2" type="text" name="address" id="address">
                     </div>
-                    <div class="c-contactform__item">
-                        <label for="phone">電話番号<span>※</span></label>
-                        <input class="c-input c-input__style1" type="tel" name="phone" id="phone" required>
+                    <div class="c-contactform__group">
+                        <div class="c-contactform__item">
+                            <label for="phone">電話番号<span>※</span></label>
+                            <input class="c-input c-input__style1" type="tel" name="phone" id="phone">
+                        </div>
+                        <span class="c-errormess"></span>
                     </div>
-                    <div class="c-contactform__item">
-                        <label for="email">メールアドレス<span>※</span></label>
-                        <input class="c-input c-input__style1" type="email" name="email" id="email" required>
+                    <div class="c-contactform__group">
+                        <div class="c-contactform__item">
+                            <label for="email">メールアドレス<span>※</span></label>
+                            <input class="c-input c-input__style1" type="email" name="email" id="email">
+                        </div>
+                        <span class="c-errormess"></span>
                     </div>
-                    <div class="c-contactform__item">
-                        <label for="survey">本サイトを知 ったきっか け</label>
+                    <div class="c-contactform__item u-pdlb1">
+                        <label class="u-pdlb2" for="survey">本サイトを知ったきっかけ</label>
                         <div class="c-contactform__label">
                             <div class="c-contactform__checkbox">
-                                <label for="search" class="c-checkbox">
+                                <label for="search" class="c-checkbox u-mgcb1">
                                     検索
                                     <input type="checkbox" name="search" id="search">
                                     <span class="c-checkmark"></span>
                                 </label>
-                                <label for="booklet" class="c-checkbox">
+                                <label for="booklet" class="c-checkbox u-mgcb2">
                                     冊子
                                     <input type="checkbox" name="booklet" id="booklet">
                                     <span class="c-checkmark"></span>
                                 </label>
-                                <label for="internet" class="c-checkbox">
+                                <label for="internet" class="c-checkbox u-mgcb3">
                                     ネット広告
                                     <input type="checkbox" name="internet" id="internet">
                                     <span class="c-checkmark"></span>
                                 </label>
-                                <label for="person" class="c-checkbox">
+                                <label for="person" class="c-checkbox u-mgcb4">
                                     口コミ 
                                     <input type="checkbox" name="person" id="person">
                                     <span class="c-checkmark"></span>
                                 </label>
-                                <label for="flyer" class="c-checkbox">
+                                <label for="flyer" class="c-checkbox u-mgcb5">
                                     チラシ
                                     <input type="checkbox" name="flyer" id="flyer">
                                     <span class="c-checkmark"></span>
                                 </label>
                             </div>
                             <div class="c-contactform__checkbox">
-                                <label for="searching">
+                                <label for="searching" class="c-checkbox u-mgcb6">
                                     検索
                                     <input type="checkbox" name="検索" id="searching">
                                     <span class="c-checkmark"></span>
                                 </label>
-                                <input class="c-input c-input__style1" type="text" name="survey" id="survey">
+                                <input class="c-input c-input__style3" type="text" name="survey" id="survey">
                             </div>
                         </div>
                     </div>
-                    <div class="c-contactform__item">
-                        <label for="content">お問い合わせ内容<span>※</span></label>
-                        <textarea class="c-input c-input__style3" name="content" id="content" cols="100" rows="30"></textarea>
+                    <div class="c-contactform__group">
+                        <div class="c-contactform__item">
+                            <label for="content">お問い合わせ内容<span>※</span></label>
+                            <textarea class="c-input c-input__style4" name="content" id="content"></textarea>
+                        </div>
+                        <span class="c-errormess"></span>
                     </div>
-
                     <button type="submit"><p>この内容で送信する</p></button>
                 </form>
             </div>

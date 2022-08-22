@@ -26,7 +26,7 @@
         max-width: 1160px;
         width: 97%;
         margin: 0 auto;
-        padding: 1.4% 0 5.1%;
+        padding: 26px 0 6.8%;
     }
 
     .c-breadcrumb {
@@ -34,7 +34,7 @@
         border-bottom: 1px solid #ccc;
 
         &__main::after {
-            bottom: -3px;
+            bottom: -4px;
         }
 
         &__char {
@@ -46,16 +46,22 @@
         margin: 0 auto;
         max-width: 790px;
         width: 90%;
-        padding-top: 3.6%;
+        padding-top: 3.7%;
     }
 
     &__title {
+        margin-bottom: 7%;
+
         h2 {
             font-size: 2.4rem;
             font-weight: 600;
             text-align: center;
             margin-bottom: 3.3%;
             padding-right: 4px;
+
+            @include sp {
+                font-size: 1.6rem;
+            }
         }
 
         p {
@@ -67,10 +73,15 @@
             line-height: 2;
             letter-spacing: 1.4px;
             padding-left: 4px;
+
+            @include sp {
+                font-size: 1.2rem;
+            }
         }
 
         span {
             color: $color2;
+            letter-spacing: 1.6px;
         }
 
         .u-red {
@@ -79,51 +90,117 @@
     }
 
     form {
-        max-width: 780px;
-        margin: 7.1% auto 0;
+        max-width: 783px;
+        margin: 0 auto;
 
         label {
             font-size: 1.6rem;
             font-weight: 600;
-            width: 32%;
             font-feature-settings: "palt" 1;
+
+            @include tab {
+                font-size: 1.2rem;
+            }
         }
 
         span {
             color: #f00;
         }
+
+        .c-errormess {
+            margin-left: 32%;
+
+            @include tab {
+                margin-left: 0;
+            }
+        }
     }
 
     .c-input {
-        height: 44px;
+        height: 45px;
         background-color: #f2f2f2;
         border: 0 none;
-        max-width: 68%;
+        max-width: 65.2%;
+        padding: 0 10px;
+
+        @include tab {
+            max-width: 100%;
+        }
     
         &__style1 {
-            width: 49.7%;
+            width: 47.2%;
+
+            @include tab {
+                max-width: 100%;
+                width: unset;
+            }
         }
 
         &__style2 {
             width: 100%;
+
+            @include tab {
+                max-width: 100%;
+                width: unset;
+            }
+        }
+
+        &__style3 {
+            max-width: 100%;
+            width: 78.5%;
+
+            @include tab {
+                width: 100%;
+            }
+        }
+
+        &__style4 {
+            width: 100%;
+            height: 200px;
+            resize: none;
+            padding: 5px 10px;
+
+            @include tab {
+                max-width: 100%;
+                width: unset;
+            }
         }
     }
 
     &__item {
         display: flex;
-        padding: 2.5% 0;
+        padding: 2.6% 0 2.4%;
         width: 100%;
         min-height: 86px;
         border-top: 1px solid #c5c5c5;
 
-        >label {
-            letter-spacing: 0.9px;
+        > label {
+            letter-spacing: 1.6px;
+            width: 32.1%;
+            font-feature-settings: "palt" 1;
+        }
+
+        @include tab {
+            flex-direction: column;
+
+            >label {
+                width: 100%;
+            }
+        }
+    }
+
+    &__label {
+        width: 68%;
+
+        @include tab {
+            width: 100%;
+            margin-bottom: 5px;
         }
     }
 
     button {
-        margin: 9.1% auto 0;
-        width: 57.9%;
+        margin: 6.8% auto 0;
+        width: 57.7%;
         height: 59px;
         box-shadow: 4px 4px rgba(0, 0, 0, 1);
         border: 0 none;
@@ -131,6 +208,11 @@
         position: relative;
         left: 50%;
         transform: translateX(-50.5%);
+
+        @include tab {
+            width: 90%;
+            max-width: 450px;
+        }
         
 
         p {
@@ -141,7 +223,7 @@
             font-family: "Noto Sans JP", sans-serif;
             font-feature-settings: "palt" 1;
             letter-spacing: 1px;
-            padding-bottom: 5px;
+            padding-bottom: 3px;
         }
 
         p::after {
@@ -158,70 +240,121 @@
         }
     }
 
-    .c-checkbox {
-        display: block;
-        position: relative;
-        padding-left: 35px;
-        margin-bottom: 12px;
-        cursor: pointer;
-        font-size: 22px;
-        user-select: none;
-        user-select: none;
-        user-select: none;
-        user-select: none;
+    &__checkbox {
+        display: flex;
+        margin-bottom: 11px;
+        align-items: center;
 
-        /* Hide the browser's default checkbox */
-        input {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 0;
-            width: 0;
+        @include tab {
+            justify-content: space-between;
         }
-
-        /* Create a custom checkbox */
-        .c-checkmark {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 25px;
-            width: 25px;
-            background-color: #eee;
-        }
-
-        /* On mouse-over, add a grey background color */
-        &:hover input ~ .c-checkmark {
-            background-color: #ccc;
-        }
-
-        /* When the checkbox is checked, add a blue background */
-        input:checked ~ .c-checkmark {
-            background-color: #2196f3;
-        }
-
-        /* Create the checkmark/indicator (hidden when not checked) */
-        .c-checkmark::after {
-            content: "";
-            position: absolute;
-            display: none;
-        }
-
-        /* Show the checkmark when checked */
-        input:checked ~ .c-checkmark::after {
-            display: block;
-        }
-
-        .c-checkmark::after {
-            left: 9px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
-            border: solid #fff;
-            border-width: 0 3px 3px 0;
-            transform: rotate(45deg);
-            transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
-  
     }
+
+    &__checkbox:last-child {
+        justify-content: space-between;
+    }
+}
+
+.c-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    font-size: 1.6rem;
+    user-select: none;
+    user-select: none;
+    user-select: none;
+    user-select: none;
+    margin-right: 10px;
+    font-feature-settings: "palt" 1;
+
+    @include sp {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        padding-left: 15px;
+        margin-right: 0;
+    }
+
+    /* Hide the browser's default checkbox */
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .c-checkmark {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        height: 17px;
+        width: 17px;
+        border: 1px solid #c2c2c2;
+
+        @include sp {
+            height: 12px;
+            width: 12px;
+        }
+    }
+
+    &:hover input ~ .c-checkmark {
+        background-color: $color1;
+    }
+
+    input:checked ~ .c-checkmark {
+        background-color: $color2;
+    }
+
+    .c-checkmark::after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    input:checked ~ .c-checkmark::after {
+        display: block;
+    }
+
+    .c-checkmark::after {
+        left: 4px;
+        top: 0;
+        width: 4px;
+        height: 8px;
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform: rotate(45deg);
+
+        @include sp {
+            left: 2px;
+            top: -1px;
+            width: 3px;
+            height: 6px;
+        }
+    }
+}
+
+.c-errormess {
+    display: none;
+    color: #f00;
+    position: relative;
+    top: -12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    &__main {
+        display: block;
+    }
+
+    @include sp {
+        font-size: 1.2rem;
+    }
+}
+
+.is-block {
+    display: block;
 }
