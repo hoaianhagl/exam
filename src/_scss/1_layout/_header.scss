@@ -52,7 +52,7 @@
     }
 
     &__navlink {
-        width: 63%;
+        width: 63.9%;
         display: flex;
         justify-content: space-between;
     }
@@ -93,11 +93,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        height: 91px;
-    }
-
-    li {
-        height: 91px;
+        justify-content: space-between;
     }
 
     a {
@@ -107,13 +103,18 @@
         font-feature-settings: "palt" 1;
         display: inline-flex;
         align-items: center;
-        height: 97.1%;
-        padding: 0 34px 0 15px;
+        height: 91px;
+        padding: 0 25px 0 24px;
+    }
+
+    li:hover {
+        
     }
     
-    li:hover {
+    a:hover {
+        opacity: 1;
         background-color: $color2;
         color: $color1;
+        opacity: 1;
     }
-    
 }

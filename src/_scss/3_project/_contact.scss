@@ -18,6 +18,11 @@
 
     .c-title {
         bottom: 11.3%;
+
+        @include sp {
+            bottom: calc(50% - 70px);
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -26,11 +31,11 @@
         max-width: 1160px;
         width: 97%;
         margin: 0 auto;
-        padding: 26px 0 6.8%;
+        padding: 1.3% 0 6.8%;
     }
 
     .c-breadcrumb {
-        padding-bottom: 33px;
+        padding-bottom: 34px;
         border-bottom: 1px solid #ccc;
 
         &__main::after {
@@ -39,6 +44,13 @@
 
         &__char {
             margin-right: 12px;
+        }
+
+        @include tab {
+            max-width: 790px;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 17px;
         }
     }
 
@@ -100,6 +112,11 @@
 
             @include tab {
                 font-size: 1.2rem;
+                margin-bottom: 1.5%;
+            }
+
+            @include screen375 {
+                font-size: 1.1rem;
             }
         }
 
@@ -156,9 +173,9 @@
 
         &__style4 {
             width: 100%;
-            height: 200px;
+            height: 190px;
             resize: none;
-            padding: 5px 10px;
+            padding: 10px;
 
             @include tab {
                 max-width: 100%;
@@ -182,6 +199,7 @@
 
         @include tab {
             flex-direction: column;
+            padding: 1.5% 0;
 
             >label {
                 width: 100%;
@@ -208,10 +226,16 @@
         position: relative;
         left: 50%;
         transform: translateX(-50.5%);
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
 
         @include tab {
             width: 90%;
-            max-width: 450px;
+            max-width: 270px;
+            height: 38px;
         }
         
 
@@ -352,6 +376,7 @@
 
     @include sp {
         font-size: 1.2rem;
+        top: -8px;
     }
 }
 

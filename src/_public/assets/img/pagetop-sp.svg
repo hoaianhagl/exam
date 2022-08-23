@@ -1,0 +1,11 @@
+<svg id="Footer" xmlns="http://www.w3.org/2000/svg" width="70" height="40" viewBox="0 0 70 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00ada0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Scroll_To_top" data-name="Scroll To top" class="cls-1" d="M70,32.554L35,0,0,32.554,7.9,40,35,14.788,62.1,40Z"/>
+</svg>

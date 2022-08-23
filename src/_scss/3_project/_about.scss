@@ -21,6 +21,11 @@ Css of home page
 
     .c-title {
         bottom: 11.3%;
+
+        @include sp {
+            bottom: calc(50% - 70px);
+            transform: translateX(-50%);
+        }
     }
 }
 
@@ -35,6 +40,9 @@ Css of home page
 
         @include sp {
             padding-bottom: 15px;
+            // max-width: 790px;
+            width: 90%;
+            margin: 0 auto;
         }
     }
 
@@ -43,6 +51,10 @@ Css of home page
         width: 97%;
         margin: 0 auto;
         padding: 1.4% 0 5.1%;
+
+        @include sp {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -119,10 +131,32 @@ Css of home page
 
     &__item1 {
         margin-bottom: 4.6%;
+
+        img {
+            object-position: 2px;
+        }
+
+        @include screen1200 {
+            img {
+                object-position: center;
+            }
+        }
     }
 
     &__item2 {
         flex-direction: row-reverse;
+
+        img {
+            height: 537px;
+            object-position: -10px;
+        }
+
+        @include screen1200 {
+            img {
+                height: unset;
+                object-position: center;
+            }
+        }
 
         @include sp {
             flex-direction: column;
@@ -132,6 +166,11 @@ Css of home page
     &__wraptext {
         width: 90%;
         max-width: 390px;
+
+        @include screen1200 {
+            max-width: 100%;
+            width: 95%;
+        }
 
         @include sp {
             max-width: 100%;
@@ -149,6 +188,10 @@ Css of home page
         justify-content: flex-end;
         padding-right: 1.1%;
 
+        @include screen1200 {
+            padding-right: 2%;
+        }
+
         @include sp {
             justify-content: center;
             padding-right: 0;
@@ -158,6 +201,10 @@ Css of home page
     &__text2 {
         padding-top: 3px;
         padding-left: 1.5%;
+
+        @include screen1200 {
+            padding-left: 2%;
+        }
 
         @include sp {
             display: flex;
@@ -172,7 +219,7 @@ Css of home page
         line-height: 2.2;
         margin-bottom: 5px;
 
-        @include sp {
+        @include tab {
             font-size: 1.6rem;
         }
     }
@@ -183,7 +230,7 @@ Css of home page
         line-height: 2;
         letter-spacing: 0.2px;
 
-        @include sp {
+        @include tab {
             font-size: 1.2rem;
         }
     }
@@ -195,12 +242,12 @@ Css of home page
             width: 100%;
             min-height: 484px;
             object-fit: cover;
-            object-position: center;
+            // object-position: center;
         }
 
-        @include sp {
+        @include screen1200 {
             img {
-                min-height: auto;
+                min-height: unset;
             }
         }
     }
@@ -217,6 +264,7 @@ Css of home page
             font-size: 2.6rem;
             font-weight: 600;
             line-height: 1.8;
+            color: #020000;
         }   
 
         @include sp {
@@ -244,16 +292,15 @@ Css of home page
             text-align: left;
         }
 
-        table,
-        th,
-        td {
-            border-top: 1px solid #ccc;
+        table {
             border-bottom: 1px solid #ccc;
-            border-collapse: collapse;            
+            border-collapse: collapse;       
         }
 
         th,
         td {
+            border-top: 1px solid #ccc;
+            border-collapse: collapse;
             padding: 2.8% 0 3.1%;
             vertical-align: text-top;
             line-height: 1.875;
@@ -269,11 +316,13 @@ Css of home page
             width: 20.3%;
             font-size: 1.6rem;
             font-weight: 600;
+            color: #020000;
         }
 
         td {
             font-size: 1.6rem;
             font-weight: 400;
+            color: #020000;
 
             span {
                 margin-right: 2%;
@@ -287,16 +336,17 @@ Css of home page
         .u-link {
             color: $color2;
         }
+
         @include sp {
             th,
             td {
                 font-size: 1.2rem;
                 display: block;
+                padding: 1.5% 0;
             }
 
             th {
-                border-top: 0 none;
-                border-bottom: 0 none;          
+                width: 100%;         
             }
 
             td {

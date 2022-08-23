@@ -9,7 +9,9 @@ $(".c-closemenu").click(function(){
     $("body").css("overflow", "auto");
 });
 
-
+$(".c-gnav").find("li").click(function(){
+    $(".c-gnav").toggleClass("is-show");
+});
 
 //Slide mainvisual
 $(document).ready(function(){
@@ -66,4 +68,16 @@ $(document).ready(function(){
             },
         ],
     });
+});
+
+//Phone call when sp
+$(document).ready(function(){
+    if($(this).width() < 767) {
+        $(".c-phone").css("cursor", "pointer");
+        $(".c-phone").click(function(){
+            window.open("tel: +0899471411");
+        });
+    } else {
+        $(".c-phone").css("cursor", "default");
+    }
 });

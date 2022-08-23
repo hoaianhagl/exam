@@ -51,14 +51,14 @@ btn
         max-width: 270px;
 
         a {
-            padding: 12px 0 13px;
+            padding: 9px 0;
             font-size: 1.4rem;
 
             &::after {
                 width: 15px;
                 height: 15px;
-                top: 16px;
-                right: 28px;
+                top: 12px;
+                right: 27px;
             }
         }
     }
