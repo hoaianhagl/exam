@@ -17,11 +17,11 @@ Css of home page
             border-color: #acdeda;
             border-radius: 3px;
 
-            h2 {
+            p {
                 color: rgba($color: #fff, $alpha: 0.5);
             }
 
-            p {
+            h2 {
                 color: $color1;
             }
         }   
@@ -94,7 +94,7 @@ Css of home page
     justify-content: center;
     bottom: -19.9%;
     left: 50%;
-    transform: translate(-58%, -11px);
+    transform: translateY(-50%);
     gap: 0 10.5px;
 
     button {
@@ -108,6 +108,7 @@ Css of home page
         border-radius: 50%;
         margin: 0 auto;
         padding: 0;
+        cursor: pointer;
     }
 
     li {
@@ -117,6 +118,7 @@ Css of home page
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 }
 
