@@ -79,4 +79,10 @@ $(document).ready(function(){
     } else {
         $(".c-phone").css("cursor", "default");
     }
+
+    $(".c-footer__arrow").on("click", function(e) {
+        e.preventDefault();
+        $("html, body").animate({scrollTop:0}, "300");
+    });
+      
 });
