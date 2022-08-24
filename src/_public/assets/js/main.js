@@ -1,20 +1,22 @@
 /* eslint-disable linebreak-style */
-$(".c-header__openmenu").click(function(){
-    $(this).parent().find(".c-gnav").addClass("is-show");
-    $("body").css("overflow", "hidden");
-});
 
-$(".c-closemenu").click(function(){
-    $(this).parent().parent().find(".c-gnav").removeClass("is-show");
-    $("body").css("overflow", "auto");
-});
 
-$(".c-gnav").find("li").click(function(){
-    $(".c-gnav").toggleClass("is-show");
-});
-
-//Slide mainvisual
 $(document).ready(function(){
+    $(".c-header__openmenu").click(function(){
+        $(this).parent().find(".c-gnav").addClass("is-show");
+        $("body").css("overflow", "hidden");
+    });
+    
+    $(".c-closemenu").click(function(){
+        $(this).parent().parent().find(".c-gnav").removeClass("is-show");
+        $("body").css("overflow", "auto");
+    });
+    
+    $(".c-gnav").find("li").click(function(){
+        $(".c-gnav").toggleClass("is-show");
+    });
+
+    //Slide mainvisual
     $(".c-mainvisual__slide").slick({
         slideToSlide: 1,
         autoplay: true,
@@ -25,10 +27,8 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
     });
-});
 
-//Slide pickup
-$(document).ready(function(){
+    //Slide pickup
     $(".c-pickup__slide").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -68,10 +68,8 @@ $(document).ready(function(){
             },
         ],
     });
-});
 
-//Phone call when sp
-$(document).ready(function(){
+    //Phone call when sp
     if($(this).width() < 767) {
         $(".c-phone").css("cursor", "pointer");
         $(".c-phone").click(function(){

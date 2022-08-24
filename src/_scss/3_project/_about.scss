@@ -50,7 +50,7 @@ Css of home page
         max-width: 1160px;
         width: 97%;
         margin: 0 auto;
-        padding: 1.4% 0 5.1%;
+        padding: 26px 0 97px;
 
         @include sp {
             width: 100%;
@@ -254,7 +254,7 @@ Css of home page
 }
 
 .c-abouttable {
-    padding-top: 5.6%;
+    padding-top: 5.3%;
 
     &__quote {
         margin: 0 auto 2.7%;
@@ -290,11 +290,7 @@ Css of home page
         table {
             width: 100%;
             text-align: left;
-        }
-
-        table {
-            border-bottom: 1px solid #ccc;
-            border-collapse: collapse;       
+            border-collapse: collapse;
         }
 
         th,
@@ -304,6 +300,13 @@ Css of home page
             padding: 2.8% 0 3.1%;
             vertical-align: text-top;
             line-height: 1.875;
+        }
+
+        tr:last-child {
+            th,
+            td {
+                border-bottom: 1px solid #ccc;
+            }
         }
 
         tr {

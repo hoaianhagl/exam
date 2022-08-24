@@ -63,3 +63,81 @@ btn
         }
     }
 }
+
+.c-btn {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    font-feature-settings: "palt" 1;
+
+    a {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 418px;
+        line-height: 100%;
+    }
+
+    a::after {
+        content: "";
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    &__style1 {
+        width: 450px;
+        height: 59px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 1);
+
+        a {
+            background-color: $color2;
+            color: $color1;
+            padding: 20px 17px 24px 16px;
+        }
+
+        a::after {
+            background-image: url("../../_public/assets/img/arrow.svg");
+        }
+
+        a:hover {
+            transform: translate(3px, 3px);
+            opacity: 1;
+        }
+    }
+}
+
+@include sp {
+    .c-btn {
+        width: 270px;
+        height: 38px;
+        font-size: 1.3rem;
+
+        &__style1 {
+            box-shadow: 2px 2px rgba(0, 0, 0, 1);
+
+            a {
+                max-width: 237px;
+                padding: 11px 17px 14px 16px;
+            }
+    
+            a::after {
+                width: 15px;
+                height: 15px;
+                right: 35px;
+                top: 12px;
+            }
+    
+            a:hover {
+                transform: translate(2px, 2px);
+            }
+        }
+
+    }
+}
