@@ -14,6 +14,7 @@
     .c-info {
         &__display {
             width: 60%;
+            min-width: 550px;
             flex-direction: column;
         }
 
@@ -52,7 +53,8 @@
         }
 
         &__display {
-            width: 91%;
+            width: 50%;
+            min-width: 360px;
             margin: 0 auto 47px;
         }
 
@@ -76,7 +78,7 @@
             width: 56.5%;
             top: 9%;
             padding: 4.4% 2.8% 6.7%;
-            min-height: 100%;
+            min-height: auto;
 
             h3 {
                 font-size: 1.4rem;
@@ -100,8 +102,10 @@
 
 @include screen375 {
     .c-info {
-        &__content {
-            min-height: auto;
+        &__display {
+            width: 91%;
+            min-width: unset;
+            margin: 0 auto 47px;
         }
     }   
 }

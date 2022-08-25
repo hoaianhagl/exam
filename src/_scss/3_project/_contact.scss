@@ -5,6 +5,10 @@
 .c-contactvisual {
     position: relative;
 
+    @include sp {
+        padding-top: 70px;
+    }
+
     &__bgimg {
         height: 400px;
 
@@ -13,6 +17,14 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+        }
+
+        @include sp {
+            height: 200px;
+
+            img {
+                object-position: center;
+            }
         }
     }
 

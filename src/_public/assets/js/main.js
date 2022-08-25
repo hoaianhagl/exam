@@ -2,6 +2,7 @@
 
 
 $(document).ready(function(){
+    // Mobile Menu
     $(".c-header__openmenu").click(function(){
         $(this).parent().find(".c-gnav").addClass("is-show");
         $("body").css("overflow", "hidden");
@@ -71,18 +72,17 @@ $(document).ready(function(){
     });
 
     //Phone call when sp
-    if($(this).width() < 767) {
-        $(".c-phone").css("cursor", "pointer");
-        $(".c-phone").click(function(){
-            window.open("tel: +0899471411");
-        });
-    } else {
-        $(".c-phone").css("cursor", "default");
-    }
+    $(window).on("resize", function() {
+        if($(this).width() < 767) {
+            $(".c-phone").css("cursor", "pointer");
+            $(".c-phone").attr("href", "tel: +0899471411");
+        }
+    });
 
+    //smooth scroll
     $(".c-footer__arrow").on("click", function(e) {
         e.preventDefault();
-        $("html, body").animate({scrollTop:0}, "300");
+        $("html, body").animate({scrollTop:0, behavior: "smooth"}, "300");
     });
       
 });

@@ -8,6 +8,10 @@ Css of home page
 .c-aboutvisual {
     position: relative;
 
+    @include sp {
+        padding-top: 70px;
+    }
+
     &__bgimg {
         height: 400px;
 
@@ -16,6 +20,14 @@ Css of home page
             height: 100%;
             object-fit: cover;
             object-position: center;
+        }
+
+        @include sp {
+            height: 200px;
+
+            img {
+                object-position: center;
+            }
         }
     }
 
@@ -111,6 +123,10 @@ Css of home page
 
 .c-aboutconcept {
     padding: 2% 0;
+
+    @include sp {
+        padding: 30px 0 50px;
+    }
 
     &__item {
         display: flex;
@@ -355,6 +371,12 @@ Css of home page
 
             td {
                 border-top: 0 none;       
+            }
+
+            tr:last-child {
+                th {
+                    border-bottom: 0 none;
+                }
             }
         }
     }
