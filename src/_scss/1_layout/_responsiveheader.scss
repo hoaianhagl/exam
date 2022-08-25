@@ -21,6 +21,13 @@
             padding: 0 15px;
         }
 
+        li:nth-of-type(4),
+        li:nth-of-type(5) {
+            a {
+                padding: 0 15px;
+            }
+        }
+
     }
 }
 
@@ -42,7 +49,6 @@
         width: 100%;
 
         a {
-            padding: 0 15px;
             font-size: 1.2rem;
         }
 
@@ -72,8 +78,8 @@
             line-height: 1;
 
             img {
-                max-width: 165px;
-                width: 96%;
+                max-width: 230px;
+                width: 95.7%;
             }
         }
 
@@ -170,6 +176,13 @@
             font-size: 1.8rem;
             padding: 0;
             height: auto;
+        }
+
+        li:nth-of-type(4),
+        li:nth-of-type(5) {
+            a {
+                padding: 0;
+            }
         }
 
         &__footer {

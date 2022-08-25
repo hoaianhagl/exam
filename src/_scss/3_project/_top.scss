@@ -87,11 +87,9 @@ Css of home page
 .slick-dots {
     position: absolute;
     display: flex !important;
-    align-items: center;
-    justify-content: center;
-    bottom: -19.9%;
+    bottom: -16.9%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     gap: 0 10.5px;
 
     button {
